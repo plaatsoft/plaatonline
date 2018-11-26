@@ -1,0 +1,247 @@
+/* 
+**  ===========
+**  PlaatEnergy
+**  ===========
+**
+**  Created by wplaat
+**
+**  For more information visit the following website.
+**  Website : www.plaatsoft.nl 
+**
+**  Or send an email to the following address.
+**  Email   : info@plaatsoft.nl
+**
+**  All copyrights reserved (c) 2008-2015 PlaatSoft
+*/
+
+*{margin:0;padding:0}
+
+body {		
+  color: #222;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#chart_div {
+  margin: auto;
+}
+
+.normal_link {
+	margin: 0px;
+	padding: 0px;
+	background-color: transparent !important;
+	color: #222;
+}
+
+.normal_link:hover {
+	text-decoration: underline;
+}
+
+.language {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+}
+
+.theme {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.upgrade {
+	color:red;
+}
+
+.online {
+	font-weight: bold;
+	color:green;
+}
+
+.offline {
+   font-weight: bold;
+	color:red;
+}
+	
+label {
+	display: block;
+}
+
+.theme,
+.language {
+	font-size: 11px;
+	font-family: monospace;
+	opacity: 0.9;
+}
+
+h1 {
+   font-size: 2em;
+   margin: calc(5px + 0.3em) 0px 0px 0px;
+}
+
+h2 {
+   font-size: 1.4em;
+   margin: 6px 0px;
+}
+
+h3 {
+   font-size: 1.2em;
+	 margin: 4px 0px;
+}
+
+th {
+   font-size: 1.2em;
+   padding: 10px 0px;
+   font-style: italic;
+}
+
+table {
+   border-collapse: collaps;
+   margin: auto;
+}
+
+.home tr,
+.home td {
+   vertical-align: top;
+}
+
+td > a{
+  display: block;
+  margin: 1px;
+}
+
+td > a:last-child {
+  margin-bottom: 0px;
+}
+
+a, input[type=submit] {
+  outline: none;
+  background-color: #1E88E5;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  border:none;
+}
+
+a:hover, input[type=submit]:hover {
+  background-color: #1976D2;
+}
+
+a:active, input[type=submit]:active {
+  background-color: #1565C0;
+}
+
+.nav {
+   margin: 20px;
+}
+
+.copyright {
+   font-size: 0.8em;
+   font-family: monospace;
+   margin: 20px;
+   opacity: 0.9;
+}
+
+.footer {
+   margin-top: 30px;
+   font-size: 0.8em;
+}
+
+.subparagraph {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px 0px; 
+}
+
+.remark {
+  font-size: 1.1em;
+  margin: 10px 0px;
+}
+
+ul {
+  font-size: 1.0em;
+  list-style-position: inside;
+}
+
+.large_text {
+   margin: auto;
+}
+
+fieldset { 
+   display: block;
+   margin-left: 30%;
+   margin-right: 30%;
+   padding-top: 0.75em;
+   padding-bottom: 0.75em;
+   padding-left: 0.75em;
+   padding-right: 0.75em;
+}
+
+
+h1{margin:15px} 
+
+/* ================ Add to h1 two suns ================ */
+h1::before,
+h1::after {
+	display: inline-block;
+	content: "";
+	width: 24px;
+	height: 24px;
+	transform: translateY(2px);
+}
+h1::before {
+	margin-right: 24px;
+}
+h1::after {
+	margin-left: 24px;
+}
+
+/* ================ Checkers (HomePage information labels) ================ */
+.checker {
+	display: inline;
+	padding: 12px 15px;
+	margin: 10px;
+	border-radius: 8px;
+	font-size: 15px;
+	color: #fff;
+}
+
+.checker.good {
+   background-color: #4CAF50;
+}
+.checker.bad {
+   background-color: #F44336;
+}
+.checker.disabled {
+   background-color: #FF5722;
+}
+
+.checker .fa,
+a .fa {
+	margin-right: 10px;
+}
+
+a .fa.right {
+	margin-left: 10px;
+	margin-right: 0px;
+}
+
+/* ================ Rotate PlaatSoft logo ================ */
+.image{
+    -moz-animation: spinHorizontal 2s infinite linear;
+    -o-animation: spinHorizontal 2s infinite linear;    
+    -webkit-animation: spinHorizontal 2s infinite linear;
+    animation: spinHorizontal 2s infinite linear;
+}
+
+@keyframes spinHorizontal {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
