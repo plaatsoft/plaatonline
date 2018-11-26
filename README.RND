@@ -1,1 +1,3 @@
-TEST
+PlaatOnline is a small tool to monitor IP network devices on a Raspberry Pi. 
+The tool create a website with report the uptime of 
+each configured devices. There are also chart available to show uptime per minute
